@@ -24,7 +24,7 @@ function handleSubmit(event) {
                 body: response.json()
             }))
             .then(({ status, body }) => {
-                console.log(status, body)
+                // console.log(status, body)
                 return body;
             }).then((response) => {
                 document.getElementById('results').innerHTML =
@@ -34,7 +34,7 @@ function handleSubmit(event) {
                     (response.subjectivity ? 'Confidence: ' + response.confidence + '<br>' : '') +
                     (response.subjectivity ? 'Irony: ' + response.irony + '<br>' : '');
                 // document.getElementById('results').innerHTML += JSON.stringify(response);
-                console.log(response)
+                // console.log(response)
             })
             .catch(error => console.log('error', error));
     }
