@@ -13,30 +13,37 @@
     <body>
 
         <header>
-            <div class="">
-                Logo
+            <div class="logo">
+                NEWS NLP
             </div>
-            <div class="">
-                navigation
-            </div>
+   
         </header>
 
         <main>
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    <label for="name">
+                        Please enter valid URL!
+                    </label>
+                    <!-- <textarea name="" id="" cols="30"></textarea> -->
+                    <!-- <textarea class="input" id="name" required rows="10" placeholder="Please enter valid URL!" ></textarea> -->
+                    <input id="name" type="text" name="input" value="" onblur="" placeholder="e.g. https://cnn.com/vaccine-inequality-blood">
+                    <button type="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                        submit
+                    </button>
+                    <!-- <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)"> -->
                 </form>
             </section>
 
-            <section>
-                <strong>Form Results:</strong>
+            <section class="info">
+                <strong>Results:</strong>
                 <div id="results"></div>
             </section>
         </main>
 
         <footer>
-            <p>This is a footer</p>
+            <p>Evaluate a news article with Natural Language Processing</p>
+            <p>Udacity Project</p>
         </footer>
 
     </body>
